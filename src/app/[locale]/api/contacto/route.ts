@@ -4,10 +4,10 @@ import { getTranslations } from "next-intl/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const SUPPORT_EMAIL = "inicio@cloudza.com.mx";
+const SUPPORT_EMAIL = "operar@vexora.com.mx";
 const BRAND_NAME = "Vexora";
 const BRAND_URL = "vexora.com.mx";
-const BRAND_LOGO = "https://cloudza.com.mx/title.png";
+const BRAND_LOGO = "https://vexora.com.mx/title.png";
 
 // Campos estándar para filtrarlos en la sección de "Campos adicionales"
 const STANDARD_FIELDS = ["nombre", "email", "mensaje", "asunto", "locale"];
