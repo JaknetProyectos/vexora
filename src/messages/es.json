@@ -1,0 +1,401 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "summary": "1. Revisión",
+      "shippingPayment": "2. Entrega y Pago"
+    },
+    "success": {
+      "title": "¡Transacción Completada Exitosamente!",
+      "description": "Tu pago ha sido autorizado. El entorno cloud de tu plan de hosting ya está en fase de configuración para su activación.",
+      "paymentReference": "Referencia de Pago:",
+      "paidAmount": "Monto Liquidado:",
+      "transactionStatus": "Estado del Pago:",
+      "approved": "AUTORIZADA",
+      "backToCatalog": "Regresar al Catálogo"
+    },
+    "empty": {
+      "title": "Tu cesta de compras está vacía",
+      "description": "No se detectaron servicios de hosting guardados en tu sesión de navegación actual.",
+      "goToStore": "Ver el Catálogo"
+    },
+    "order": {
+      "title": "Productos en tu orden",
+      "clear": "Eliminar Planes"
+    },
+    "financial": {
+      "title": "Resumen de Cuenta",
+      "couponPlaceholder": "Código promocional",
+      "applyCoupon": "Aplicar",
+      "appliedCoupon": "Cupón {code} (-{discount}%)",
+      "remove": "Quitar",
+      "couponInvalid": "El código de descuento no es válido o ya expiró.",
+      "subtotal": "Subtotal de Productos:",
+      "discount": "Descuento Obtenido:",
+      "netTotal": "Monto Neto a Liquidar:",
+      "tax": "IVA {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Avanzar al Pago",
+      "processing": "Validando Transacción por medio de Octano...",
+      "payAmount": "Pagar {amount}",
+      "backToCart": "Modificar pedido / Modificar cupón"
+    },
+    "errors": {
+      "declined": "El cargo fue denegado por el banco emisor.",
+      "connection": "Se experimentó un problema de enlace con el procesador de pagos."
+    },
+    "metadata": {
+      "couponApplied": "Cupón de descuento activo",
+      "standardSale": "Adquisición digital convencional"
+    },
+    "form": {
+      "buyerTitle": "Datos de Facturación / Comprador",
+      "addressTitle": "Información de Contacto y Activación",
+      "paymentTitle": "Pasarela de Cobro Encriptada",
+      "firstName": "Nombre(s) *",
+      "lastName": "Apellidos *",
+      "email": "Correo electrónico *",
+      "phone": "Teléfono Móvil (10 posiciones) *",
+      "company": "Empresa (Opcional)",
+      "streetAddress": "Vía pública, Número Exterior y Número Interior *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Int 4",
+      "neighborhood": "Colonia / Entre Calles (Opcional)",
+      "neighborhoodPlaceholder": "Col. Vértiz Narvarte",
+      "city": "Alcaldía o Localidad *",
+      "state": "Provincia / Estado *",
+      "statePlaceholder": "CDMX",
+      "postalCode": "Código Postal *",
+      "country": "Territorio",
+      "mexico": "México (MX)",
+      "cardNumber": "Número de Tarjeta (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Titular de la Tarjeta *",
+      "cardHolderPlaceholder": "Tal como aparece en la tarjeta",
+      "expiryMonth": "Mes Exp. (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Año Exp. (AAAA) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Código de Verificación (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Proceso gestionado bajo estándares de seguridad"
+    },
+    "images": {
+      "etominAlt": "Octano",
+      "securePaymentAlt": "Pago seguro"
+    }
+  },
+  "customPlan": {
+    "hero": {
+      "titleHighlight": "Paga",
+      "titleMain": "tu cotización",
+      "subtitle": "Configuración personalizada",
+      "description": "Solución diseñada específicamente para tu operación. Cada negocio tiene procesos, tiempos y objetivos distintos. Por ello, desarrollamos estructuras completamente adaptadas a tus necesidades.",
+      "includesTitle": "¿Qué incluye esta solución?",
+      "features": {
+        "item1": "Análisis de tu proceso comercial actual",
+        "item2": "Identificación de oportunidades de automatización",
+        "item3": "Diseño de solución a medida",
+        "item4": "Implementación estratégica personalizada",
+        "item5": "Optimización enfocada en resultados"
+      },
+      "investmentLabel": "Inversión",
+      "investmentValue": "Definida según alcance",
+      "investmentTax": "+ IVA"
+    },
+    "form": {
+      "badge": "Servicios Personalizados",
+      "title": "Datos del Proyecto",
+      "firstNameLabel": "Nombre",
+      "firstNamePlaceholder": "Escribe tu nombre",
+      "lastNameLabel": "Apellidos",
+      "lastNamePlaceholder": "Escribe tus apellidos",
+      "phoneLabel": "Teléfono de Contacto",
+      "phonePlaceholder": "Ej. +52 55 1234 5678",
+      "emailLabel": "Correo Electrónico",
+      "emailPlaceholder": "correo@ejemplo.com",
+      "quoteLabel": "Número de Folio o Cotización",
+      "quotePlaceholder": "Ej. COT-2026-001",
+      "amountLabel": "Monto a Pagar",
+      "amountPlaceholder": "0.00",
+      "taxNote": "El monto final de la cotización debe ser exacto e incluir impuestos si así lo acordaste con tu asesor comercial."
+    },
+    "authorized": {
+      "description": "Por favor, completa los datos de contacto y el folio de cotización asignado por nuestro equipo. El monto ingresado debe coincidir de forma exacta con tu documento oficial de presupuesto."
+    },
+    "errors": {
+      "firstNameRequired": "El nombre es obligatorio.",
+      "lastNameRequired": "El apellido es obligatorio.",
+      "phoneRequired": "El número de teléfono es obligatorio.",
+      "emailRequired": "El correo electrónico es obligatorio.",
+      "quoteRequired": "El número de cotización/folio es obligatorio.",
+      "invalidAmount": "Por favor, ingresa un monto válido y mayor a cero."
+    },
+    "buttons": {
+      "adding": "Agregando al carrito...",
+      "addToCart": "Proceder al pago"
+    }
+  },
+  "header": {
+    "logoAlt": "Logotipo de la empresa",
+    "titleAlt": "Nombre de la empresa",
+    "cartAriaLabel": "Ir al carrito de compras",
+    "openMenuAriaLabel": "Abrir menú de navegación",
+    "closeMenuAriaLabel": "Cerrar menú de navegación",
+    "nav": {
+      "home": "Punto De Partida Digital",
+      "solutions": "Ventaja Competitiva",
+      "contact": "Punto de Contacto Estratégico"
+    }
+  },
+  "hero": {
+    "badge": "Arquitecturas de Conversión de Alto Rendimiento",
+    "title": {
+      "line1": "Sistemas",
+      "line2": "que",
+      "line3": "convierten",
+      "line4": "sin",
+      "line5": "intervención"
+    },
+    "description": "Diseñamos y desplegamos arquitecturas de conversión automatizadas que capturan, califican y dan seguimiento a tus oportunidades comerciales sin depender de ti.",
+    "imageAlt": "Panel de control de conversión automatizado que muestra gráficos y analíticas de ventas"
+  },
+  "about": {
+    "imageAlt": "Presentador Vexora",
+    "title": {
+      "light": "Somos",
+      "brandLine1": "Flow",
+      "brandLine2": "Grade"
+    },
+    "quote": "“La conversión no es cuestión de talento comercial. Es cuestión de arquitectura.”",
+    "description": {
+      "p1": "Vexora es una firma especializada en el desarrollo de soluciones de automatización comercial digital, enfocadas en optimizar la forma en que las empresas captan, gestionan y convierten prospectos.",
+      "p2": "Nuestro enfoque combina estructura estratégica, implementación tecnológica y optimización de procesos comerciales. No vendemos teoría: diseñamos sistemas que funcionan.",
+      "p3": "Trabajamos con empresas que buscan orden, control y crecimiento real en sus canales digitales."
+    },
+    "features": {
+      "f1": "Extremo a extremo",
+      "f2": "Cada proyecto con métricas de éxito claras"
+    }
+  },
+  "methodology": {
+    "badge": "Proyectos que hablan por sí solos.",
+    "subtitle": "Metodología",
+    "title": "El proceso que convierte operación en sistema.",
+    "rightText": "Tres etapas claras que transforman tu operación comercial manual en una arquitectura escalable.",
+    "imageAlt": "Trabajo en laptop",
+    "steps": {
+      "diagnostic": {
+        "title": "Diagnóstico",
+        "description": "Auditamos tus flujos comerciales actuales e identificamos puntos de fricción y fuga."
+      },
+      "architecture": {
+        "title": "Arquitectura",
+        "description": "Diseñamos el sistema de captación, calificación y seguimiento a medida."
+      },
+      "implementation": {
+        "title": "Implementación",
+        "description": "Desplegamos la arquitectura, integramos herramientas y entregamos métricas claras."
+      }
+    }
+  },
+  "services": {
+    "badge": "Servicios",
+    "mainTitle": "Soluciones diseñadas para cada etapa comercial.",
+    "items": {
+      "capture": {
+        "title": "Captación",
+        "description": "Sistemas que atraen, filtran y ordenan oportunidades comerciales sin esfuerzo manual."
+      },
+      "conversion": {
+        "title": "Conversión",
+        "description": "Arquitecturas de seguimiento automatizado que transforman prospectos en clientes."
+      },
+      "measurement": {
+        "title": "Medición",
+        "description": "Dashboards y métricas claras para decidir con datos, no con intuición."
+      }
+    }
+  },
+  "differentiators": {
+    "introText": "Lo que nos diferencia de un proveedor tradicional: somos arquitectos de tu operación comercial digital, no simples ejecutores.",
+    "imageAlt": "Presentación de métricas de rendimiento comercial",
+    "badge": "Diferenciadores",
+    "mainTitle": "Lo que nos hace distintos.",
+    "items": {
+      "01": {
+        "title": "Implementación lista, sin dependencias",
+        "description": "Sistemas listos para operar desde el primer día, sin esquemas recurrentes ni licencias atadas a tu crecimiento."
+      },
+      "02": {
+        "title": "Diseñado para escalar y adaptarse",
+        "description": "Estructuras pensadas para crecer con tu volumen, adaptables a distintos modelos de negocio y etapas comerciales."
+      },
+      "03": {
+        "title": "Enfoque total en conversión",
+        "description": "Optimización desde el primer contacto hasta el cierre. Cada decisión de arquitectura está orientada a generar resultados."
+      }
+    }
+  },
+  "customConfig": {
+    "badge": "Configuración Personalizada",
+    "mainTitle": "Solución diseñada específicamente para tu operación.",
+    "ctaButton": "Solicitar Configuración Personalizada",
+    "introText": "Cada negocio tiene procesos, tiempos y objetivos distintos. Por ello, desarrollamos estructuras completamente adaptadas a tu operación.",
+    "imageAlt": "Equipo de ingenieros y analistas trabajando en desarrollo técnico comercial",
+    "steps": {
+      "01": {
+        "title": "Análisis y diagnóstico",
+        "description": "Auditamos tu proceso comercial actual e identificamos las oportunidades de automatización con mayor impacto."
+      },
+      "02": {
+        "title": "Diseño a medida",
+        "description": "Desarrollamos una solución completamente adaptada a tu operación, alineada a tus objetivos y tiempos."
+      },
+      "03": {
+        "title": "Implementación estratégica",
+        "description": "Desplegamos la solución y optimizamos cada componente con enfoque en resultados medibles."
+      }
+    }
+  },
+  "cta": {
+    "badge": "Siguiente Paso Estratégico",
+    "title": "Convierte tu operación en un sistema hoy.",
+    "description": "Una conversación inicial es suficiente para mapear tu flujo comercial actual y proponer la arquitectura que lo automatiza.",
+    "buttonText": "Solicitar Diagnóstico"
+  },
+  "footer": {
+    "logoAlt": "Logotipo de Vexora",
+    "titleAlt": "Vexora",
+    "brandDescription": "Desplegamos arquitecturas de conversión automatizadas que optimizan de manera constante el rendimiento comercial de tu empresa.",
+    "address": "Avenida Homero 404, Piso 5 Col. Polanco V Sección Alcaldía Miguel Hidalgo C.P. 11560, CDMX",
+    "paymentAlt": "Métodos de pago aceptados",
+    "copyright": "© Copyright 2026. Todos los derechos reservados.",
+    "legal": {
+      "privacy": "Aviso de Privacidad",
+      "refunds": "Política de Cancelaciones y Reembolsos",
+      "terms": "Condiciones Generales de Uso y Contratación"
+    }
+  },
+  "soluciones": {
+    "hero": {
+      "subtitle": "Nuestras",
+      "title": "soluciones de automatización",
+      "description": "Descubre nuestros sistemas diseñados para optimizar tu infraestructura digital, eliminar tareas manuales e impulsar la eficiencia operativa de tu negocio."
+    },
+    "solutionStatus": "disponible",
+    "currencyTax": "MXN +IVA",
+    "hireButton": "CONTRATAR"
+  },
+  "contacto": {
+    "hero": {
+      "subtitle": "Comienza",
+      "title": "contactando"
+    },
+    "payment": {
+      "title": {
+        "line1": "Si ya tienes",
+        "line2": "tu cotización"
+      },
+      "button": "Paga Aquí"
+    },
+    "info": {
+      "addressLabel": "Dirección",
+      "addressDetails": {
+        "line1": "Avenida Homero 404,",
+        "line2": "Piso 5 Col. Polanco V Sección",
+        "line3": "Alcaldía Miguel Hidalgo",
+        "line4": "C.P. 11560, CDMX"
+      },
+      "phoneLabel": "Teléfono",
+      "emailLabel": "Correo"
+    },
+    "form": {
+      "error": {
+        "fallback": "Ocurrió un error inesperado al enviar tu mensaje."
+      },
+      "success": {
+        "title": "Mensaje enviado",
+        "description": "Nos pondremos en contacto contigo pronto."
+      },
+      "labels": {
+        "name": "Nombre Completo (Requerido)",
+        "company": "Empresa (Opcional)",
+        "email": "Correo Electrónico (Requerido)",
+        "subject": "Asunto (Requerido)",
+        "message": "Mensaje"
+      },
+      "placeholders": {
+        "name": "Ingresa tu nombre",
+        "company": "Ingresa empresa",
+        "email": "Ingresa tu correo electrónico",
+        "subject": "Ingresa asunto",
+        "message": "Ingresa tu mensaje"
+      },
+      "button": {
+        "sending": "Enviando...",
+        "idle": "Enviar mensaje"
+      }
+    }
+  },
+  "Emails": {
+    "checkout": {
+      "errorMissingFields": "Faltan campos requeridos para procesar la orden",
+      "errorSending": "Error interno del servidor",
+      "client": {
+        "subject": "✓ Tu recibo de compra #{orderId} - {brandName}",
+        "title": "Confirmación de Compra",
+        "subtitle": "Gracias por tu confianza. Tu orden #{orderId} ha sido procesada con éxito y hemos comenzado la preparación del despliegue de tus sistemas de automatización."
+      },
+      "business": {
+        "subject": "💰 [Venta] Orden #{orderId} - ${amount} MXN",
+        "title": "¡Nueva Venta Procesada!",
+        "subtitle": "Se ha registrado un nuevo pago exitoso por un monto de ${amount} MXN relacionado a proyectos de automatización."
+      },
+      "labels": {
+        "orderId": "ID de Orden",
+        "paymentDate": "Fecha de Pago",
+        "buyerInfo": "Información del Comprador",
+        "billingDetails": "Detalles de Facturación",
+        "customer": "Cliente",
+        "address": "Dirección",
+        "company": "Empresa",
+        "operationDetails": "Detalles de la Operación",
+        "modulesSummary": "Resumen de Módulos & Sistemas",
+        "totalPaid": "Total Pagado"
+      },
+      "footer": {
+        "copyright": "© {year} {brandName}. Todos los derechos reservados.",
+        "specialty": "Especialistas en Automatización de Procesos, Integraciones de Software & Eficiencia Operativa."
+      }
+    },
+    "contact": {
+      "errorMissingFields": "Faltan campos requeridos (nombre, email, mensaje)",
+      "errorSending": "Error interno del servidor",
+      "business": {
+        "subject": "🚨 [Lead] {asunto} - {nombre}",
+        "title": "Nuevo Lead de Contacto",
+        "subtitle": "Se ha recibido un nuevo formulario desde el sitio web.",
+        "sectionLabel": "Detalles del Solicitante"
+      },
+      "client": {
+        "subject": "✓ Recibimos tu solicitud - {brandName}",
+        "title": "Hemos recibido tu mensaje",
+        "subtitle": "Gracias por ponerte en contacto con nuestro equipo de automatización y optimización de procesos.",
+        "sectionLabel": "Resumen de tu Mensaje",
+        "automatedNotice": "* Este es un correo automatizado confirmando la recepción de tu solicitud. Nuestro equipo de automatización de procesos analizará tus datos para contactarte a la brevedad."
+      },
+      "fields": {
+        "name": "Nombre",
+        "email": "Correo Electrónico",
+        "message": "Mensaje enviado"
+      },
+      "footer": {
+        "copyright": "© {year} {brandName}. Todos los derechos reservados.",
+        "specialty": "Especialistas en Automatización de Procesos, Integraciones de Software & Eficiencia Operativa."
+      }
+    }
+  }
+}

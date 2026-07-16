@@ -1,0 +1,401 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "summary": "1. Review",
+      "shippingPayment": "2. Delivery and Payment Details"
+    },
+    "success": {
+      "title": "Payment Authorized Successfully!",
+      "description": "Your transaction has been approved. Your cloud hosting plan configuration is currently being processed for immediate activation.",
+      "paymentReference": "Payment ID:",
+      "paidAmount": "Total Paid:",
+      "transactionStatus": "Transaction State:",
+      "approved": "APPROVED",
+      "backToCatalog": "Return to Catalog"
+    },
+    "empty": {
+      "title": "Your shopping cart is empty",
+      "description": "We could not find any hosting services or plans selected in your current browsing session.",
+      "goToStore": "View Catalog"
+    },
+    "order": {
+      "title": "Products in Your Order",
+      "clear": "Remove Plans"
+    },
+    "financial": {
+      "title": "Account Summary",
+      "couponPlaceholder": "Promo code",
+      "applyCoupon": "Validate",
+      "appliedCoupon": "Promo {code} (-{discount}%)",
+      "remove": "Delete",
+      "couponInvalid": "The discount code you entered is invalid or has expired.",
+      "subtotal": "Subtotal amount:",
+      "discount": "Discount applied:",
+      "netTotal": "Net Balance Due:",
+      "tax": "VAT {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Continue to Payment Form",
+      "processing": "Checking Funds through Octano...",
+      "payAmount": "Authorize {amount}",
+      "backToCart": "Edit my order / Modify coupon"
+    },
+    "errors": {
+      "declined": "The charge was rejected by the card issuer.",
+      "connection": "A communication error occurred with the payment platform."
+    },
+    "metadata": {
+      "couponApplied": "Promo code active",
+      "standardSale": "Standard digital purchase"
+    },
+    "form": {
+      "buyerTitle": "Purchaser / Billing Details",
+      "addressTitle": "Contact and Activation Details",
+      "paymentTitle": "Secured Payment Gateway",
+      "firstName": "First Name(s) *",
+      "lastName": "Last Name(s) *",
+      "email": "Email Address *",
+      "phone": "Cell Phone (10 digits) *",
+      "company": "Company Name (Optional)",
+      "streetAddress": "Street, Exterior No. and Interior No. *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Apt 4",
+      "neighborhood": "Neighborhood / Intersections (Optional)",
+      "neighborhoodPlaceholder": "Vértiz Narvarte",
+      "city": "City *",
+      "state": "State / Province *",
+      "statePlaceholder": "Mexico City",
+      "postalCode": "ZIP / Postal Code *",
+      "country": "Country",
+      "mexico": "Mexico (MX)",
+      "cardNumber": "Card Number (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Cardholder Full Name *",
+      "cardHolderPlaceholder": "Exactly as shown on the card",
+      "expiryMonth": "Exp. Month (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Exp. Year (YYYY) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Security Code (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Secured Transaction"
+    },
+    "images": {
+      "etominAlt": "Octano",
+      "securePaymentAlt": "Safe transaction"
+    }
+  },
+  "customPlan": {
+    "hero": {
+      "titleHighlight": "Pay",
+      "titleMain": "your quote",
+      "subtitle": "Customized Configuration",
+      "description": "A solution tailored specifically to your business operations. Every business has unique workflows, timelines, and goals. That is why we develop structural frameworks fully aligned with your exact needs.",
+      "includesTitle": "What does this solution include?",
+      "features": {
+        "item1": "Analysis of your current sales process",
+        "item2": "Identification of automation opportunities",
+        "item3": "Tailored solution design",
+        "item4": "Custom strategic implementation",
+        "item5": "Result-oriented optimization"
+      },
+      "investmentLabel": "Investment",
+      "investmentValue": "Defined by project scope",
+      "investmentTax": "+ TAX / VAT"
+    },
+    "form": {
+      "badge": "Custom Services",
+      "title": "Project Details",
+      "firstNameLabel": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastNameLabel": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "phoneLabel": "Contact Phone",
+      "phonePlaceholder": "e.g., +1 555 123 4567",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "email@example.com",
+      "quoteLabel": "Quote / Folio Number",
+      "quotePlaceholder": "e.g., QT-2026-001",
+      "amountLabel": "Amount to Pay",
+      "amountPlaceholder": "0.00",
+      "taxNote": "The final quote amount must be exact and include taxes if agreed upon with your sales representative."
+    },
+    "authorized": {
+      "description": "Please complete the contact information and the quote number assigned by our team. The amount entered must match your official budget document exactly."
+    },
+    "errors": {
+      "firstNameRequired": "First name is required.",
+      "lastNameRequired": "Last name is required.",
+      "phoneRequired": "Phone number is required.",
+      "emailRequired": "Email address is required.",
+      "quoteRequired": "Quote / Folio number is required.",
+      "invalidAmount": "Please enter a valid amount greater than zero."
+    },
+    "buttons": {
+      "adding": "Adding to cart...",
+      "addToCart": "Proceed to checkout"
+    }
+  },
+  "header": {
+    "logoAlt": "Company logo",
+    "titleAlt": "Company name",
+    "cartAriaLabel": "Go to shopping cart",
+    "openMenuAriaLabel": "Open navigation menu",
+    "closeMenuAriaLabel": "Close navigation menu",
+    "nav": {
+      "home": "Digital Starting Point",
+      "solutions": "Competitive Advantage",
+      "contact": "Strategic Point of Contact"
+    }
+  },
+  "hero": {
+    "badge": "High-Performance Conversion Architectures",
+    "title": {
+      "line1": "Systems",
+      "line2": "that",
+      "line3": "convert",
+      "line4": "without",
+      "line5": "intervention"
+    },
+    "description": "We design and deploy automated conversion architectures that capture, qualify, and follow up on your sales opportunities without relying on you.",
+    "imageAlt": "Automated conversion dashboard displaying charts and sales analytics"
+  },
+  "about": {
+    "imageAlt": "Vexora Presenter",
+    "title": {
+      "light": "We are",
+      "brandLine1": "Flow",
+      "brandLine2": "Grade"
+    },
+    "quote": "“Conversion is not a matter of sales talent. It is a matter of architecture.”",
+    "description": {
+      "p1": "Vexora is a firm specialized in developing digital sales automation solutions, focused on optimizing how businesses capture, manage, and convert leads.",
+      "p2": "Our approach combines strategic structuring, technology implementation, and sales process optimization. We don't sell theory: we design systems that actually work.",
+      "p3": "We work with companies seeking order, control, and real growth across their digital channels."
+    },
+    "features": {
+      "f1": "End-to-end",
+      "f2": "Every project backed by clear success metrics"
+    }
+  },
+  "methodology": {
+    "badge": "Projects that speak for themselves.",
+    "subtitle": "Methodology",
+    "title": "The process that turns operations into systems.",
+    "rightText": "Three clear stages that transform your manual sales operations into a scalable architecture.",
+    "imageAlt": "Working on laptop",
+    "steps": {
+      "diagnostic": {
+        "title": "Diagnostics",
+        "description": "We audit your current sales flows and identify points of friction and leakage."
+      },
+      "architecture": {
+        "title": "Architecture",
+        "description": "We design your custom capture, qualification, and follow-up system."
+      },
+      "implementation": {
+        "title": "Implementation",
+        "description": "We deploy the architecture, integrate tools, and deliver clear metrics."
+      }
+    }
+  },
+  "services": {
+    "badge": "Services",
+    "mainTitle": "Solutions engineered for every stage of your sales funnel.",
+    "items": {
+      "capture": {
+        "title": "Lead Generation",
+        "description": "Systems that attract, filter, and organize sales opportunities without manual effort."
+      },
+      "conversion": {
+        "title": "Conversion",
+        "description": "Automated follow-up frameworks designed to turn prospects into paying clients."
+      },
+      "measurement": {
+        "title": "Analytics",
+        "description": "Clear dashboards and performance metrics to make decisions driven by data, not gut feelings."
+      }
+    }
+  },
+  "differentiators": {
+    "introText": "What sets us apart from a traditional provider: we are architects of your digital commercial operation, not simple executors.",
+    "imageAlt": "Presentation of business performance metrics",
+    "badge": "Differentiators",
+    "mainTitle": "What makes us different.",
+    "items": {
+      "01": {
+        "title": "Ready-to-go implementation, zero dependencies",
+        "description": "Systems ready to operate from day one, without recurring fee schemes or licenses tied to your business growth."
+      },
+      "02": {
+        "title": "Designed to scale and adapt",
+        "description": "Structures built to grow alongside your volume, flexible enough for different business models and stages."
+      },
+      "03": {
+        "title": "Uncompromising focus on conversion",
+        "description": "Optimization from the very first touchpoint to close. Every architectural decision is geared toward driving results."
+      }
+    }
+  },
+  "customConfig": {
+    "badge": "Custom Configuration",
+    "mainTitle": "A solution tailored specifically to your operations.",
+    "ctaButton": "Request Custom Configuration",
+    "introText": "Every business has unique processes, timelines, and objectives. That's why we build structures completely adapted to your operation.",
+    "imageAlt": "Technical and analytical team collaborating on digital system setup",
+    "steps": {
+      "01": {
+        "title": "Analysis & Diagnosis",
+        "description": "We audit your current sales process and identify the automation opportunities with the highest impact."
+      },
+      "02": {
+        "title": "Bespoke Design",
+        "description": "We develop a solution fully adapted to your workflows, closely aligned with your goals and timelines."
+      },
+      "03": {
+        "title": "Strategic Implementation",
+        "description": "We deploy the solution and optimize every component with a clear focus on measurable outcomes."
+      }
+    }
+  },
+  "cta": {
+    "badge": "Next Strategic Step",
+    "title": "Turn your operation into a system today.",
+    "description": "An initial conversation is all it takes to map out your current sales flow and propose the architecture to automate it.",
+    "buttonText": "Request a Diagnostic"
+  },
+  "footer": {
+    "logoAlt": "Vexora Logo",
+    "titleAlt": "Vexora",
+    "brandDescription": "We deploy automated conversion architectures that constantly optimize your company's business performance.",
+    "address": "Avenida Homero 404, Floor 5, Col. Polanco V Seccion, Miguel Hidalgo, C.P. 11560, CDMX, Mexico",
+    "paymentAlt": "Accepted payment methods",
+    "copyright": "© Copyright 2026. All rights reserved.",
+    "legal": {
+      "privacy": "Privacy Notice",
+      "refunds": "Cancellation & Refund Policy",
+      "terms": "General Terms of Use and Contracting"
+    }
+  },
+  "soluciones": {
+    "hero": {
+      "subtitle": "Our",
+      "title": "automation solutions",
+      "description": "Discover our systems designed to optimize your digital infrastructure, eliminate manual tasks, and boost your business's operational efficiency."
+    },
+    "solutionStatus": "available",
+    "currencyTax": "MXN +VAT",
+    "hireButton": "HIRE NOW"
+  },
+  "contacto": {
+    "hero": {
+      "subtitle": "Get started",
+      "title": "by contacting us"
+    },
+    "payment": {
+      "title": {
+        "line1": "If you already",
+        "line2": "have your quote"
+      },
+      "button": "Pay Here"
+    },
+    "info": {
+      "addressLabel": "Address",
+      "addressDetails": {
+        "line1": "404 Homero Avenue,",
+        "line2": "5th Floor, Polanco V Section",
+        "line3": "Miguel Hidalgo Borough",
+        "line4": "Z.C. 11560, Mexico City"
+      },
+      "phoneLabel": "Phone",
+      "emailLabel": "Email"
+    },
+    "form": {
+      "error": {
+        "fallback": "An unexpected error occurred while sending your message."
+      },
+      "success": {
+        "title": "Message sent",
+        "description": "We will get in touch with you shortly."
+      },
+      "labels": {
+        "name": "Full Name (Required)",
+        "company": "Company (Optional)",
+        "email": "Email Address (Required)",
+        "subject": "Subject (Required)",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Enter your name",
+        "company": "Enter company name",
+        "email": "Enter your email address",
+        "subject": "Enter subject",
+        "message": "Enter your message"
+      },
+      "button": {
+        "sending": "Sending...",
+        "idle": "Send message"
+      }
+    }
+  },
+  "Emails": {
+    "checkout": {
+      "errorMissingFields": "Required fields are missing to process the order",
+      "errorSending": "Internal server error",
+      "client": {
+        "subject": "✓ Your purchase receipt #{orderId} - {brandName}",
+        "title": "Purchase Confirmation",
+        "subtitle": "Thank you for your business. Your order #{orderId} has been successfully processed, and we have started preparing the deployment of your automation systems."
+      },
+      "business": {
+        "subject": "💰 [Sale] Order #{orderId} - ${amount} MXN",
+        "title": "New Sale Processed!",
+        "subtitle": "A new successful payment has been recorded for the amount of ${amount} MXN related to automation projects."
+      },
+      "labels": {
+        "orderId": "Order ID",
+        "paymentDate": "Payment Date",
+        "buyerInfo": "Buyer Information",
+        "billingDetails": "Billing Details",
+        "customer": "Customer",
+        "address": "Address",
+        "company": "Company",
+        "operationDetails": "Operation Details",
+        "modulesSummary": "Modules & Systems Summary",
+        "totalPaid": "Total Paid"
+      },
+      "footer": {
+        "copyright": "© {year} {brandName}. All rights reserved.",
+        "specialty": "Specialists in Process Automation, Software Integrations & Operational Efficiency."
+      }
+    },
+    "contact": {
+      "errorMissingFields": "Required fields are missing (name, email, message)",
+      "errorSending": "Internal server error",
+      "business": {
+        "subject": "🚨 [Lead] {asunto} - {nombre}",
+        "title": "New Contact Lead",
+        "subtitle": "A new form submission has been received from the website.",
+        "sectionLabel": "Requester Details"
+      },
+      "client": {
+        "subject": "✓ We received your request - {brandName}",
+        "title": "We have received your message",
+        "subtitle": "Thank you for reaching out to our process automation and optimization team.",
+        "sectionLabel": "Summary of your Message",
+        "automatedNotice": "* This is an automated email confirming the receipt of your request. Our process automation team will analyze your data and get in touch with you shortly."
+      },
+      "fields": {
+        "name": "Name",
+        "email": "Email Address",
+        "message": "Message sent"
+      },
+      "footer": {
+        "copyright": "© {year} {brandName}. All rights reserved.",
+        "specialty": "Specialists in Process Automation, Software Integrations & Operational Efficiency."
+      }
+    }
+  }
+}
