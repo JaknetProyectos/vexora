@@ -10,7 +10,7 @@ export default function CTASection() {
   return (
     <section
       id="contacto"
-      className="relative py-20 lg:py-28 bg-gradient-to-br from-indigo-950 via-blue-900 to-indigo-950 text-white overflow-hidden"
+      className="relative p-20 lg:py-28 bg-gradient-to-br from-indigo-950 via-blue-900 to-indigo-950 text-white overflow-hidden"
     >
       {/* Elementos decorativos de fondo (Esferas de luz tecnológica) */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />

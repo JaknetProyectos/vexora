@@ -87,6 +87,8 @@ export default function CustomProductPage() {
         id: `custom-quote-${quoteNumber.trim().toLowerCase()}`,
         name: customProductName,
         price: finalPrice,
+        features: [],
+        fullDescription: ""
       },
       1
     );

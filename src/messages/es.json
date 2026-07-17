@@ -166,8 +166,8 @@
     "imageAlt": "Presentador Vexora",
     "title": {
       "light": "Somos",
-      "brandLine1": "Flow",
-      "brandLine2": "Grade"
+      "brandLine1": "Vexora",
+      "brandLine2": ""
     },
     "quote": "“La conversión no es cuestión de talento comercial. Es cuestión de arquitectura.”",
     "description": {
@@ -274,9 +274,9 @@
     "paymentAlt": "Métodos de pago aceptados",
     "copyright": "© Copyright 2026. Todos los derechos reservados.",
     "legal": {
-      "privacy": "Aviso de Privacidad",
-      "refunds": "Política de Cancelaciones y Reembolsos",
-      "terms": "Condiciones Generales de Uso y Contratación"
+      "privacy": "AVISO DE PRIVACIDAD",
+      "refunds": "POLÍTICA DE CANCELACIONES Y REEMBOLSOS",
+      "terms": "CONDICIONES GENERALES DE USO Y CONTRATACIÓN"
     }
   },
   "soluciones": {
@@ -396,6 +396,23 @@
         "copyright": "© {year} {brandName}. Todos los derechos reservados.",
         "specialty": "Especialistas en Automatización de Procesos, Integraciones de Software & Eficiencia Operativa."
       }
+    }
+  },
+  "PlanDetail": {
+    "notFound": {
+      "title": "404",
+      "message": "La solución solicitada no existe o no está disponible.",
+      "backButton": "Volver a Soluciones"
+    },
+    "backLink": "Volver a soluciones",
+    "planIdLabel": "Plan ID",
+    "currencySuffix": "MXN + IVA",
+    "scopeTitle": "Alcance del Plan",
+    "quantityDecrease": "Disminuir cantidad",
+    "quantityIncrease": "Aumentar cantidad",
+    "cart": {
+      "adding": "Agregando...",
+      "add": "Agregar al carrito"
     }
   }
 }

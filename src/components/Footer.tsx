@@ -81,19 +81,19 @@ export default function Footer() {
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             <Link
-              href="#"
+              href="/legal/privacidad"
               className="text-xs text-neutral-400 hover:text-blue-400 transition-colors duration-200 font-medium"
             >
               {t("legal.privacy")}
             </Link>
             <Link
-              href="#"
+              href="/legal/reembolsos"
               className="text-xs text-neutral-400 hover:text-blue-400 transition-colors duration-200 font-medium"
             >
               {t("legal.refunds")}
             </Link>
             <Link
-              href="#"
+              href="/legal/terminos"
               className="text-xs text-neutral-400 hover:text-blue-400 transition-colors duration-200 font-medium"
             >
               {t("legal.terms")}

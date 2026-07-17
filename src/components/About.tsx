@@ -38,8 +38,6 @@ export default function About() {
                 <span className="font-light text-neutral-400">{t("title.light")} </span>
                 <span className="relative inline-block text-white">
                   {t("title.brandLine1")}
-                  <br />
-                  {t("title.brandLine2")}
                   {/* Subrayado con gradiente azul-morado redondeado */}
                   <span className="absolute -bottom-2 left-0 w-full h-[5px] bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full" />
                 </span>

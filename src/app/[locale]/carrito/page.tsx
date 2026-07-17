@@ -28,12 +28,15 @@ import { useCart } from "@/context/CartContext";
 
 import { processOctanoPayment } from "@/lib/payment";
 import { formatPrice } from "@/lib/price";
+import { useSolutions } from "@/hooks/useSolutions";
 
 const VALID_COUPONS = [
   { code: "VEX10", discount: 0.1 },
   { code: "VEX15", discount: 0.15 },
   { code: "VEXPRO20", discount: 0.2 },
 ];
+
+const BACK_CATALOG_LINK = "/soluciones"
 
 type Step = 1 | 2 | 3;
 
@@ -135,6 +138,7 @@ function Field({
 export default function CarritoCheckoutPage() {
   const t = useTranslations("cartPage");
   const locale = useLocale();
+  const { solutions } = useSolutions()
 
   const { items, total, updateQuantity, removeItem, clearCart } = useCart();
 
@@ -305,7 +309,7 @@ export default function CarritoCheckoutPage() {
                 </div>
               </div>
 
-              <Link href="/paquetes" className="mt-8 block">
+              <Link href={BACK_CATALOG_LINK} className="mt-8 block">
                 <button className="w-full rounded-xl bg-black py-6 text-sm font-bold text-white transition-all duration-300 hover:bg-neutral-800 shadow-md border border-white/10 hover:border-white/30">
                   {t("success.backToCatalog")}
                 </button>
@@ -347,19 +351,16 @@ export default function CarritoCheckoutPage() {
 
           <div className="flex items-center gap-3">
             <div
-              className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${
-                step >= 1 ? "bg-white" : "bg-blue-700"
-              }`}
+              className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${step >= 1 ? "bg-white" : "bg-blue-700"
+                }`}
             />
             <div
-              className={`h-0.5 w-12 rounded-full transition-colors duration-300 ${
-                step >= 2 ? "bg-white" : "bg-blue-700"
-              }`}
+              className={`h-0.5 w-12 rounded-full transition-colors duration-300 ${step >= 2 ? "bg-white" : "bg-blue-700"
+                }`}
             />
             <div
-              className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${
-                step >= 2 ? "bg-white" : "bg-blue-700"
-              }`}
+              className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${step >= 2 ? "bg-white" : "bg-blue-700"
+                }`}
             />
           </div>
         </div>
@@ -379,7 +380,7 @@ export default function CarritoCheckoutPage() {
               <p className="mx-auto mt-2 max-w-xs text-xs leading-relaxed text-blue-100">
                 {t("empty.description")}
               </p>
-              <Link href="/paquetes" className="mt-8 inline-block">
+              <Link href={BACK_CATALOG_LINK} className="mt-8 inline-block">
                 <button className="rounded-xl border border-white/20 bg-black px-8 py-5 text-xs font-semibold text-white transition-all duration-300 hover:bg-neutral-800">
                   {t("empty.goToStore")}
                 </button>
@@ -414,91 +415,107 @@ export default function CarritoCheckoutPage() {
                       </div>
 
                       <div className="mt-5 space-y-4">
-                        {items.map((item) => (
-                          <div
-                            key={item.product.id}
-                            className="rounded-[1.5rem] border border-white/10 bg-blue-950/40 p-4 transition-all duration-300 hover:border-white/30 hover:bg-blue-950/60"
-                          >
-                            <div className="grid grid-cols-[88px_minmax(0,1fr)] gap-4 sm:grid-cols-[96px_minmax(0,1fr)]">
-                              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-blue-900 p-2">
-                                <Link
-                                  href={`/producto/${item.product.id}`}
-                                  className="absolute inset-0 z-10"
-                                />
-                                <Image
-                                  src={item.product.image || "/logo.png"}
-                                  alt={item.product.name}
-                                  fill
-                                  className="object-cover transition-transform invert brightness-0 duration-500 hover:scale-105"
-                                />
-                              </div>
+                        {items.map((item) => {
+                          // 1. Buscamos la solución real que coincide con el ID del producto en el carrito
+                          const matchingSolution = solutions.find((solution) => solution.id === item.product.id);
 
-                              <div className="flex min-w-0 flex-col justify-between gap-4">
-                                <div className="flex items-start justify-between gap-3">
-                                  <div className="min-w-0">
-                                    <p className="mb-1 inline-block rounded-md border border-white/20 bg-white/10 px-2 py-0.5 font-mono text-[9px] font-bold tracking-[0.16em] text-white">
-                                      {item.product.id}
-                                    </p>
+                          // 2. Si por alguna razón no encuentra la solución en tu hook, usamos los datos del carrito como respaldo (fallback)
+                          const displayProduct = matchingSolution || item.product;
 
-                                    <h3 className="line-clamp-1 text-sm font-bold text-white">
-                                      {item.product.name}
-                                    </h3>
-                                  </div>
+                          return (
+                            <div
+                              key={displayProduct.id}
+                              className="rounded-[1.5rem] border border-slate-100 bg-slate-50/50 p-4 transition-all duration-300 hover:border-blue-100 hover:bg-white hover:shadow-[0_10px_30px_rgba(30,58,138,0.04)]"
+                            >
+                              <div className="grid grid-cols-[88px_minmax(0,1fr)] gap-4 sm:grid-cols-[96px_minmax(0,1fr)]">
 
-                                  <button
-                                    type="button"
-                                    onClick={() => removeItem(item.product.id)}
-                                    className="rounded-lg p-1.5 text-blue-200 transition hover:bg-white/20 hover:text-white"
-                                  >
-                                    <Trash2 className="h-4 w-4" />
-                                  </button>
+                                {/* Contenedor de Imagen Claro Premium */}
+                                <div className="relative overflow-hidden rounded-2xl  p-2 flex items-center justify-center aspect-square">
+                                  <Link
+                                    href={`/soluciones/${displayProduct.id}`}
+                                    className="absolute inset-0 z-10"
+                                  />
+                                  <Image
+                                    src={displayProduct.image || "/logo.png"}
+                                    alt={displayProduct.name}
+                                    fill
+                                    className="object-contain rounded-xl p-1 transition-transform duration-500 hover:scale-105"
+                                  />
                                 </div>
 
-                                <div className="flex items-end justify-between gap-4">
-                                  <div className="flex items-center rounded-xl border border-white/10 bg-black/20 p-0.5">
+                                {/* Información del Producto */}
+                                <div className="flex min-w-0 flex-col justify-between gap-4">
+                                  <div className="flex items-start justify-between gap-3">
+                                    <div className="min-w-0">
+                                      <p className="mb-1 inline-block rounded-md  px-2 py-0.5 font-mono text-[9px] font-bold tracking-[0.16em] text-slate-500">
+                                        {displayProduct.id}
+                                      </p>
+
+                                      <h3 className="line-clamp-1 text-sm font-extrabold text-slate-900 font-['Manrope']">
+                                        {displayProduct.name}
+                                      </h3>
+                                    </div>
+
+                                    {/* Botón Eliminar */}
                                     <button
                                       type="button"
-                                      onClick={() =>
-                                        updateQuantity(
-                                          item.product.id,
-                                          item.quantity - 1
-                                        )
-                                      }
-                                      className="rounded-lg p-2 text-blue-200 transition hover:bg-white/20 hover:text-white"
+                                      onClick={() => removeItem(displayProduct.id)}
+                                      className="rounded-xl p-1.5 text-slate-400 transition hover:bg-red-50 hover:text-red-600"
+                                      aria-label="Eliminar artículo"
                                     >
-                                      <Minus className="h-3 w-3" />
+                                      <Trash2 className="h-4 w-4" />
                                     </button>
+                                  </div>
 
-                                    <span className="w-9 text-center text-xs font-bold text-white">
-                                      {item.quantity}
+                                  {/* Contador de Cantidad y Precio */}
+                                  <div className="flex items-end justify-between gap-4">
+                                    <div className="flex items-center rounded-xl border border-slate-200 bg-white p-0.5 shadow-sm">
+                                      <button
+                                        type="button"
+                                        onClick={() =>
+                                          updateQuantity(
+                                            displayProduct.id,
+                                            item.quantity - 1
+                                          )
+                                        }
+                                        className="rounded-lg p-2 text-slate-400 transition hover:bg-slate-50 hover:text-blue-600"
+                                      >
+                                        <Minus className="h-3 w-3" />
+                                      </button>
+
+                                      <span className="w-9 text-center text-xs font-mono font-bold text-slate-900">
+                                        {item.quantity}
+                                      </span>
+
+                                      <button
+                                        type="button"
+                                        onClick={() =>
+                                          updateQuantity(
+                                            displayProduct.id,
+                                            item.quantity + 1
+                                          )
+                                        }
+                                        className="rounded-lg p-2 text-slate-400 transition hover:bg-slate-50 hover:text-blue-600"
+                                      >
+                                        <Plus className="h-3 w-3" />
+                                      </button>
+                                    </div>
+
+                                    {/* Precio Total en Texto Oscuro */}
+                                    <span className="text-sm font-black tracking-tight text-slate-900 font-['Manrope']">
+                                      {formatPrice(
+                                        displayProduct.price * item.quantity,
+                                        "MXN",
+                                        true
+                                      )}
                                     </span>
-
-                                    <button
-                                      type="button"
-                                      onClick={() =>
-                                        updateQuantity(
-                                          item.product.id,
-                                          item.quantity + 1
-                                        )
-                                      }
-                                      className="rounded-lg p-2 text-blue-200 transition hover:bg-white/20 hover:text-white"
-                                    >
-                                      <Plus className="h-3 w-3" />
-                                    </button>
                                   </div>
-
-                                  <span className="text-sm font-black tracking-tight text-white">
-                                    {formatPrice(
-                                      item.product.price * item.quantity,
-                                      "MXN",
-                                      true
-                                    )}
-                                  </span>
                                 </div>
+
                               </div>
                             </div>
-                          </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     </CardShell>
 

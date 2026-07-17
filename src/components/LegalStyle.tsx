@@ -7,7 +7,7 @@ type LegalStyleProps = {
 
 export default function LegalStyle({
   mode = "light",
-  accent = "#45c5b7",
+  accent = "#4f46e5",
 }: LegalStyleProps) {
   const isDark = mode === "dark";
 

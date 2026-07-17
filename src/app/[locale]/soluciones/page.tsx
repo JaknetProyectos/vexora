@@ -7,6 +7,7 @@ import { useSolutions } from "@/hooks/useSolutions";
 import { formatPrice } from "@/lib/price";
 import { useCart } from "@/context/CartContext";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 export default function SolucionesPage() {
   const t = useTranslations("soluciones");
@@ -15,12 +16,12 @@ export default function SolucionesPage() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900 selection:bg-blue-500/20 selection:text-blue-900">
-      
+
       {/* Hero Section */}
       <section className="py-20 lg:py-28 bg-white border-b border-slate-100 relative overflow-hidden">
         {/* Sutil halo azul de fondo */}
         <div className="pointer-events-none absolute top-0 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-500/5 blur-[120px]" />
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-2">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-blue-400 font-['Manrope'] tracking-tight">
@@ -59,13 +60,18 @@ export default function SolucionesPage() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-900 font-['Manrope'] mb-3 group-hover:text-blue-600 transition-colors duration-300">
-                    {solution.name}
-                  </h3>
+                  <Link href={`/soluciones/${solution.id}`}>
+                    <h3 className="text-xl font-bold text-slate-900 font-['Manrope'] mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                      {solution.name}
+                    </h3>
+                  </Link>
+
+
 
                   <p className="text-sm text-slate-500 leading-relaxed mb-8">
                     {solution.description}
                   </p>
+
                 </div>
 
                 <div className="relative z-10">
@@ -83,9 +89,11 @@ export default function SolucionesPage() {
                       addItem({
                         id: solution.id,
                         description: solution.description,
-                        image: "/logo.png",
+                        image: solution.image,
                         name: solution.name,
-                        price: solution.price
+                        price: solution.price,
+                        features: solution.features,
+                        fullDescription: solution.fullDescription
                       })
                     }}
                     className="inline-flex hover:cursor-pointer items-center justify-center w-full gap-2 border-2 border-blue-600 text-blue-600 bg-white px-5 py-4 rounded-2xl hover:bg-blue-50/70 transition-all duration-300 text-sm font-bold uppercase tracking-wider group/btn"

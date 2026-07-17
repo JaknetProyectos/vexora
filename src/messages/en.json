@@ -166,8 +166,8 @@
     "imageAlt": "Vexora Presenter",
     "title": {
       "light": "We are",
-      "brandLine1": "Flow",
-      "brandLine2": "Grade"
+      "brandLine1": "Vexora",
+      "brandLine2": ""
     },
     "quote": "“Conversion is not a matter of sales talent. It is a matter of architecture.”",
     "description": {
@@ -274,9 +274,9 @@
     "paymentAlt": "Accepted payment methods",
     "copyright": "© Copyright 2026. All rights reserved.",
     "legal": {
-      "privacy": "Privacy Notice",
-      "refunds": "Cancellation & Refund Policy",
-      "terms": "General Terms of Use and Contracting"
+      "privacy": "PRIVACY NOTICE",
+      "refunds": "CANCELLATION AND REFUND POLICY",
+      "terms": "GENERAL TERMS OF USE AND CONTRACTING"
     }
   },
   "soluciones": {
@@ -396,6 +396,23 @@
         "copyright": "© {year} {brandName}. All rights reserved.",
         "specialty": "Specialists in Process Automation, Software Integrations & Operational Efficiency."
       }
+    }
+  },
+  "PlanDetail": {
+    "notFound": {
+      "title": "404",
+      "message": "The requested solution does not exist or is not available.",
+      "backButton": "Back to Solutions"
+    },
+    "backLink": "Back to solutions",
+    "planIdLabel": "Plan ID",
+    "currencySuffix": "MXN + VAT",
+    "scopeTitle": "Plan Scope",
+    "quantityDecrease": "Decrease quantity",
+    "quantityIncrease": "Increase quantity",
+    "cart": {
+      "adding": "Adding...",
+      "add": "Add to cart"
     }
   }
 }
